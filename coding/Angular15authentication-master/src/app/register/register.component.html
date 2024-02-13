@@ -1,0 +1,55 @@
+<mat-card>
+  <mat-card-header>
+    <h2>Registeration</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="id">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Full Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="password">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+      <mat-radio-group formControlName="gender" aria-label="Select an option">
+        <mat-label><b> Gender </b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+      </mat-radio-group>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Skills</mat-label>
+        <input matInput formControlName="skills">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Package</mat-label>
+        <input matInput formControlName="package">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Location</mat-label>
+        <input matInput formControlName="location">
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button color="primary">Submit</button>
+        <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

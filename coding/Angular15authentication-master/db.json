@@ -1,0 +1,164 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "password": "Test$1234",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "skills": "Python, Java, C++, Docker, DeVops, Microservices",
+      "package": "10.00lpa",
+      "location": "Noida",
+      "isactive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "id": "Phani",
+      "name": "Om Phani katheva ",
+      "password": "Phani@109",
+      "email": "phaniom09@gmail.com",
+      "gender": "male",
+      "role": "Senior Software Engineer",
+      "skills": "Python, C++",
+      "package": "6.00lpa",
+      "location": "Vijayawada",
+      "isactive": true
+    },
+    {
+      "id": "Kola_aru",
+      "name": "Kola Aravind Kumar",
+      "password": "Kolaaru@098",
+      "email": "arvin098@gmail.com",
+      "gender": "male",
+      "role": "Graduate Engineer Trainee",
+      "skills": "Python",
+      "package": "4.25lpa",
+      "location": "vijayawada",
+      "isactive": true
+    },
+    {
+      "id": "sujuka",
+      "name": "Sujith Kumar Akambaram",
+      "password": "Sujuka@07",
+      "email": "sujuka07@gmail.com",
+      "gender": "male",
+      "role": "",
+      "skills": "Java",
+      "package": "2.75lpa",
+      "location": "Vijayawada",
+      "isactive": false
+    },
+    {
+      "id": "Dilip_kota",
+      "name": "Dilip Manoj Kota",
+      "password": "Dilipkota@123",
+      "email": "dilipkota@gmail.com",
+      "gender": "male",
+      "role": "Graduate Engineer Trainee",
+      "skills": "Java",
+      "package": "4.25lpa",
+      "location": "Vijayawada",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "Technical Lead",
+      "name": "Technical Lead"
+    },
+    {
+      "code": "Junior Developer",
+      "name": "Junior Developer"
+    },
+    {
+      "code": "Junior Tester",
+      "name": "Junior Tester"
+    },
+    {
+      "code": "Graduate Engineer Trainee",
+      "name": "Graduate Engineer Trainee"
+    },
+    {
+      "code": "Senior Technical Lead",
+      "name": "Senior Technical Lead"
+    },
+    {
+      "code": "Senior Software Engineer",
+      "name": "Senior Software Engineer"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "rakhesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 2,
+      "name": "rahul",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 3,
+      "name": "ramesh",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 4,
+      "name": "rahim",
+      "Creditlimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "robert",
+      "Creditlimit": 1000
+    }
+  ]
+}
